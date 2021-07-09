@@ -1,0 +1,17 @@
+{
+  "Id": "Policyx",
+  "Statement": [
+    {
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::sanketsanketsanket/*",
+      "Principal": {
+        "AWS": [
+          "*"
+        ]
+      }
+    }
+  ]
+}
