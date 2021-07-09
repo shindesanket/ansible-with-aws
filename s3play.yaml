@@ -1,0 +1,17 @@
+- hosts: localhost
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+  - name: create S3 bucket
+    s3_bucket:
+      name: "sanketsanketsanket"
+      aws_access_key: ""
+      aws_secret_key: ""
+      security_token:  ""
+      policy: "{{ lookup( 'file','bpolicy.json' )}}"
+      state: present
+      region: us-east-1
+      versioning: no
+      tags:
+         name: “sanketsanketsanket”
+         type: example
