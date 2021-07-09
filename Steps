@@ -11,7 +11,8 @@ sudo ln -s /usr/bin/pip3 /usr/bin/pip
 
 sudo pip install ansible
 
-After running these commands, create bpolicy.json and s3play.yaml files as uploaded in this repo and run following command.
+After running these commands, create bpolicy.json and s3play.yaml files as uploaded in this repo.
+Update aws access key, secret key, security token and run following command.
 
 ansible-playbook s3play.yaml
 
